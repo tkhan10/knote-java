@@ -1,0 +1,6 @@
+com/learning/model/GroceryItem.class
+com/learning/repository/GroceryItemRepository.class
+com/learning/controller/KnoteController.class
+com/learning/service/KnoteService.class
+com/learning/KnoteJavaApplication.class
+com/learning/model/Note.class

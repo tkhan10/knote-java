@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      - ME_CONFIG_MONGODB_URL=mongodb://localhost@mongodb:27017/tofekdatabase?
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+
+  web:
+    build: .
+    ports:
+      - 8080:9090
+    depends_on:
+      - mongodb
+      - mongo-express
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/tofekdatabase
+
+networks:
+  default:
+    name: mongodb_network
