@@ -15,8 +15,6 @@ on:
     branches: [ "release" ]
 
 jobs:
-  test:
-    run: echo "Testing push code"
   build:
 
     runs-on: ubuntu-latest
