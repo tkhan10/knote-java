@@ -28,3 +28,11 @@ docker tag tofek/tofek-image-store:latest 326522136754.dkr.ecr.us-east-2.amazona
 
 4. Run the following command to push this image to your newly created AWS repository:
 docker push 326522136754.dkr.ecr.us-east-2.amazonaws.com/tofek/tofek-image-store:latest
+
+
+### How to AWS access key ID and secret access key for the IAM user
+Run below command in terminal
+
+aws iam create-access-key --user-name your-iam-username
+
+Note:- relpace your iam username.
