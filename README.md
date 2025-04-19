@@ -14,6 +14,10 @@ github - https://github.com/tkhan10/knote-java.git
 ### You can test this after hitting below url in browser or postman
       http://localhost:8080/notes/
 
+### Configure github action to push image to docker hub.
+
+
+
 ### Push docker image to AWS ECR
 Run below command to push image to ECR
 1. Retrieve an authentication token and authenticate your Docker client to your registry. Use the AWS CLI:
